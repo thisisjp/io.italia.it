@@ -3,30 +3,51 @@ labels:
   attivita: Attività svolta
   dati: Dati trattati
   luogo: Luogo del trattamento dei dati
-  garanzie: Garanzie adottate in tema di trasferimento dati all’estero
+  garanzie: Garanzie adottate in tema di trasferimento dati all'estero
   doc: Documentazione contrattuale
 items:
   - 
-    fornitore: "Sia S.P.A."
+    fornitore: "Nexi Payments S.p.A. e NewCo 55 S.r.l. (già SIA S.p.A.)"
     attivita: "Componenti applicative piattaforma pagoPA e relativa assistenza clienti"
     dati: "Dati relativi alla sezione Portafoglio e relative segnalazioni e richieste di assistenza "
     luogo: Italia
     garanzie: "N/A"
-    doc: "[link 1](https://www.pagopa.gov.it/it/pagopa-spa/societa-trasparente/bandi-gara-contratti/atti-amministrazioni-aggiudicatrici/2019/#13) [link 2](https://www.pagopa.gov.it/it/pagopa-spa/societa-trasparente/bandi-gara-contratti/atti-amministrazioni-aggiudicatrici/2020/#14)"
+    doc: "[link 1](https://pagopa.portaleamministrazionetrasparente.it/moduli/downloadFile.php?file=oggetto_allegati/212981058390O__O06.+Allegato_2_Contratto_signed+%281%29.pdf) [link 2](https://pagopa.portaleamministrazionetrasparente.it/moduli/downloadFile.php?file=oggetto_allegati/212981004500O__O07.+Allegato+4+-+Sicurezza_pagoPA_CentroStella+final_signed+%281%29.pdf) [link 3](https://pagopa.portaleamministrazionetrasparente.it/moduli/downloadFile.php?file=oggetto_allegati/212981024440O__OSIA_DPA_atto+aggiuntivo+%281%29.pdf)"
   - 
-    fornitore: "Acapo Cooperativa Sociale"
+    fornitore: "aCapo Cooperativa Sociale"
     attivita: "Servizio assistenza clienti"
     dati: "Dati necessari per trattare richieste di assistenza degli utenti"
     luogo: Italia
     garanzie: "N/A"
-    doc: "[link](https://www.pagopa.gov.it/it/pagopa-spa/societa-trasparente/bandi-gara-contratti/atti-amministrazioni-aggiudicatrici/2020/#16)"
+    doc: "[link](https://pagopa.portaleamministrazionetrasparente.it/moduli/downloadFile.php?file=oggetto_allegati/212981026400O__O10.+Acapo_nomina+a+responsabile.pdf)"
   - 
-    fornitore: "MailUP S.p.A."
+    fornitore: "Growens S.p.A. (già MailUP S.p.A.)"
     attivita: "Invio di email (inoltro messaggi ricevuti in-app e newsletter del progetto IO)"
-    dati: "Indirizzo email degli utenti e dati inclusi nei messaggi inoltrati dall’app"
+    dati: "Indirizzo email degli utenti e dati inclusi nei messaggi inoltrati dall'app"
     luogo: Italia
     garanzie: "N/A"
-    doc: "[link](https://www.pagopa.gov.it/it/pagopa-spa/societa-trasparente/bandi-gara-contratti/atti-amministrazioni-aggiudicatrici/2020/#3)"
+    doc: "[link](https://pagopa.portaleamministrazionetrasparente.it/moduli/downloadFile.php?file=oggetto_allegati/212981009390O__OMailUp_TC_DPA.pdf)"
+  - 
+    fornitore: "Fabrick S.p.A."
+    attivita: "Servizi di elaborazione e validazione di dati bancari e finanziari (ad esempio, controllo intestazione IBAN e strumenti di pagamento)"
+    dati: "Dati identificativi, bancari e finanziari degli utenti che si avvalgono di servizi in app che richiedono validazione dei dati"
+    luogo: Italia
+    garanzie: "N/A"
+    doc: "[link](https://io.italia.it/assets/download/it/Fabrick_Addendum-1_DPA.pdf)"
+  - 
+    fornitore: "Atlantica Digital S.p.A."
+    attivita: "Servizi di Vulnerability Assessment/Penetration Test e Security Consulting"
+    dati: "Dati personali cui il fornitore potrebbe eventualmente avere accesso nello svolgimento dei servizi affidati"
+    luogo: Italia
+    garanzie: "N/A"
+    doc: "[link](https://io.italia.it/assets/download/it/Atlantica-Digital_DPA.pdf)"
+  - 
+    fornitore: "OneTrust Technology Limited"
+    attivita: "Software gestionale per adempimenti privacy"
+    dati: "Dati forniti dagli interessati nei campi compilabili di uno specifico form"
+    luogo: "Germania\n\n"
+    garanzie: "N/A"
+    doc: "[link](https://github.com/pagopa/io.italia.it/blob/master/assets/download/it/OneTrust_DPA.pdf)"
   - 
     fornitore: "LimeSurvey GmbH"
     attivita: "Servizio per form, moduli e questionari online"
@@ -37,33 +58,33 @@ items:
   - 
     fornitore: "Microsoft Ireland Operations Limited"
     attivita: "Servizi di backup e cloud computing"
-    dati: "Tutti i dati degli utenti inclusi nel database dell’App IO"
+    dati: "Tutti i dati degli utenti inclusi nel database dell'App IO"
     luogo: Paesi Bassi, con back up in Irlanda
     garanzie: "- opzione di residenza dei dati in UE\n\n
   - clausole contrattuali standard  della Commissione Europea\n\n
-  - clausole contrattuali aggiuntive a supplemento delle clausole contrattuali standard della Commissione Europea per tutelare i trasferimenti di dati al di fuori dell’UE"
-    doc: "[link](https://www.pagopa.gov.it/it/pagopa-spa/societa-trasparente/bandi-gara-contratti/atti-amministrazioni-aggiudicatrici/2019/#2)"
+  - clausole contrattuali aggiuntive a supplemento delle clausole contrattuali standard della Commissione Europea per tutelare i trasferimenti di dati al di fuori dell'UE"
+    doc: "[link](https://pagopa.portaleamministrazionetrasparente.it/moduli/downloadFile.php?file=oggetto_allegati/212981011410O__O12.+Microsoft_DPA+Dec+2020.pdf)"
   - 
     fornitore: "Mixpanel, Inc."
-    attivita: "Raccolta dati di utilizzo dell’App IO  tramite i dispositivi per scopi di debug, incident response, assistenza tecnica e miglioramento dell’App"
-    dati: "Dati di navigazione e utilizzo dell’app da parte dell’utente"
+    attivita: "Raccolta dati di utilizzo dell'App IO  tramite i dispositivi per scopi di debug, incident response, assistenza tecnica e miglioramento dell'App"
+    dati: "Dati di navigazione e utilizzo dell'app da parte dell'utente"
     luogo: "- Paesi Bassi\n\n 
-    - USA (per eventuali sub responsabili)\n\n
-    (in corso di valutazione la sostituzione del fornitore)"
+    - USA (per eventuali sub responsabili, solo in caso di richiesta di supporto tecnico da parte di PagoPA S.p.A. od operazioni di manutenzione da parte del fornitore)"
     garanzie: "- opzione di residenza dei dati in UE\n\n
   - clausole contrattuali standard  della Commissione Europea\n\n
-  - clausole contrattuali aggiuntive a supplemento delle clausole contrattuali standard della Commissione Europea per tutelare i trasferimenti di dati al di fuori dell’UE"
-    doc: "[link](https://www.pagopa.gov.it/it/pagopa-spa/societa-trasparente/bandi-gara-contratti/atti-amministrazioni-aggiudicatrici/2020/#22)"
+  - clausole contrattuali aggiuntive a supplemento delle clausole contrattuali standard della Commissione Europea per tutelare i trasferimenti di dati al di fuori dell'UE\n\n
+  - modifica puntuale alla contrattualistica standard del fornitore, al fine di chiarire l'impossibilità per lo stesso di trattare dati per finalità proprie e ribadire la prevalenza dell'accordo privacy (DPA) sulla contrattualistica standard"
+    doc: "[link 1](https://pagopa.portaleamministrazionetrasparente.it/moduli/downloadFile.php?file=oggetto_allegati/212981029270O__O05.+Mixpanel_DPA_EU+Residency.pdf) [link 2](https://pagopa.portaleamministrazionetrasparente.it/moduli/downloadFile.php?file=oggetto_allegati/212981029270O__O06.+Mixpanel_Amendment+No.+1+to+DPA.pdf) [link 3](https://pagopa.portaleamministrazionetrasparente.it/moduli/downloadFile.php?file=oggetto_allegati/212981029270O__OMixpanel_DPA_Amendment2.pdf)"
   - 
     fornitore: "Instabug, Inc."
-    attivita: "Soluzione tecnica per l’invio di segnalazioni e la gestione dell’assistenza clienti"
-    dati: "(i) Dati forniti dall’utente nella segnalazione (NB: disincentiviamo l’utente a fornire dati “critici” o “sensibili” nelle segnalazioni)\n\n
-(ii) Dati di navigazione per migliorare l’assistenza"
+    attivita: "Soluzione tecnica per l'invio di segnalazioni e la gestione dell'assistenza clienti"
+    dati: "(i) Dati forniti dall'utente nella segnalazione (NB: disincentiviamo l'utente a fornire dati \"critici\" o \"sensibili\" nelle segnalazioni)\n\n
+(ii) Dati relativi al dispositivo e alla navigazione per migliorare l'assistenza"
     luogo: "USA\n\n
-(in corso negoziazioni su opzioni di residenza dei dati in UE e valutazione sulla sostituzione del fornitore)"
+(in corso valutazione sulla sostituzione del fornitore)"
     garanzie: "- clausole contrattuali standard della Commissione Europea\n\n
-  - clausole contrattuali aggiuntive a supplemento delle clausole contrattuali standard della Commissione Europea per tutelare i trasferimenti di dati al di fuori dell’UE"
-    doc: "[link](https://www.pagopa.gov.it/it/pagopa-spa/societa-trasparente/bandi-gara-contratti/atti-amministrazioni-aggiudicatrici/2020/#21)"
+  - clausole contrattuali aggiuntive a supplemento delle clausole contrattuali standard della Commissione Europea per tutelare i trasferimenti di dati al di fuori dell'UE"
+    doc: "[link 1](https://pagopa.portaleamministrazionetrasparente.it/moduli/downloadFile.php?file=oggetto_allegati/212981019140O__O07.+Instabug_DPA.pdf) [link 2](https://pagopa.portaleamministrazionetrasparente.it/moduli/downloadFile.php?file=oggetto_allegati/212981019270O__O08.+Instabug_Amendment+1+to+DPA.pdf)"
   - 
     fornitore: "Slack Technologies Limited"
     attivita: "Piattaforma di messaggistica per comunicazione interna alla PagoPA S.p.A."
@@ -71,7 +92,7 @@ items:
     luogo: "USA\n\n
     (trattamento di dati personali degli utenti eventuale e comunque marginale, solo in caso di necessità e urgenza)"
     garanzie: "- clausole contrattuali standard  della Commissione Europea"
-    doc: "[link](https://www.pagopa.gov.it/it/pagopa-spa/societa-trasparente/bandi-gara-contratti/atti-amministrazioni-aggiudicatrici/2019/#14)"
+    doc: "[link](https://pagopa.portaleamministrazionetrasparente.it/moduli/downloadFile.php?file=oggetto_allegati/212981016550O__OSlack_DPA_sep+2021.pdf)"
   - 
     fornitore: "Google LLC"
     attivita: "Invio di notifiche Push"
@@ -83,6 +104,13 @@ items:
     fornitore: "Google LLC"
     attivita: "Servizio per form, moduli e questionari online"
     dati: "Dati forniti dagli interessati nei campi compilabili di uno specifico form"
+    luogo: "data center globali del fornitore, con possibile trasferimento verso paesi terzi (compresi USA)\n\n"
+    garanzie: "- clausole contrattuali standard della Commissione Europea\n\n"
+    doc: "[link](https://workspace.google.com/terms/dpa_terms.html)"
+  - 
+    fornitore: "Google LLC"
+    attivita: "Servizio di posta elettronica"
+    dati: "Dati forniti dagli interessati nelle richieste di assistenza indirizzate alla Società"
     luogo: "data center globali del fornitore, con possibile trasferimento verso paesi terzi (compresi USA)\n\n"
     garanzie: "- clausole contrattuali standard della Commissione Europea\n\n"
     doc: "[link](https://workspace.google.com/terms/dpa_terms.html)"

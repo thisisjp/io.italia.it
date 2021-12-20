@@ -7,10 +7,10 @@ require 'down'
 
 downloadUrl = "https://assets.cdn.io.italia.it/services-webview/visible-services-extended.json"
 begin
-    file =  Down.download(downloadUrl, open_timeout: 5)
+    file =  Down.download(downloadUrl, open_timeout: 15)
 rescue
     # fallback in case we cannot download the source file
-    puts "File unreachable"
+    raise "File unreachable"
 end
 
 def sanitizeString(str)
@@ -19,19 +19,21 @@ def sanitizeString(str)
         return str
     end
     prepositions = /Dei |Degli |Di |Della |Delle |Dell'|Dell’|Del |Allo |Al |A |Sul |Sulla |Per | E |D'|Im |In |Am /
+    specials = / Ii/
     # drop special characters
-    cleanString = str.gsub(/[!@%&" ]/,'')
+    cleanString = str.gsub(/[!@%&" ]/,'').strip
     # Let's transform all the words of a OrgName in capitalize
     capitalizedString = cleanString.gsub(/\S+/, &:capitalize)
     # Solve problem with composed string ex. D'iseo -> D'Iseo
     capitalizedStringComposed = capitalizedString.gsub(/('[a-z]|-[a-z]|’[a-z])/, &:upcase)
     # Lowercase for prepositions (in italian and german)
-    return capitalizedStringComposed.gsub(prepositions, &:downcase)
+    capitalizedStringComposedPrepositions = capitalizedStringComposed.gsub(prepositions, &:downcase)
+    return capitalizedStringComposedPrepositions.gsub(specials, &:upcase)
 end
 
 def renderEntiList(file, site)
     data_hash = JSON.parse(file.read)
-    fcBlacklist = ['15376371009']
+    fcBlacklist = ['15376371009', '00000000000', '00000000001', '00000000002', '00000000003', '00000000004', '00000000005', '00000000006']
     new_content = {}
     new_content["items"] = {}
     # Creation of an hash only to display in a json for the App Io webview
@@ -54,7 +56,8 @@ def renderEntiList(file, site)
         end
         # content creation for webview list
         new_content_webview_item = {}
-        new_content_webview_item[ item["fc"] ] = item["o"]
+        new_content_webview_item[ item["fc"] ] = sanitizeString(item["o"])
+
         scope = ""
         # ---
         item_new_values = {}
@@ -105,8 +108,10 @@ def renderEntiList(file, site)
     # conversion of hash in array
     new_content["items"] = new_content["items"].values
 
-    File.write('./assets/json/enti-list-webview.json', JSON.dump(new_content_webview.values))
-    File.write('./assets/json/enti-list-searchable.json', JSON.dump(enti_searchable))
+    enti_searchable_sorted = enti_searchable.sort
+
+    File.write('./assets/json/enti-list-webview.json', JSON.dump( new_content_webview.values.sort_by{ |hsh| hsh.values[0] } ))
+    File.write('./assets/json/enti-list-searchable.json', JSON.dump(enti_searchable_sorted))
     File.write('_data/enti-servizi.json', JSON.dump(new_content))
 end
 
