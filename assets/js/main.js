@@ -22,6 +22,11 @@ function submitNewsletter(token) {
             data: JSON.stringify(data),
             success: function(data, textStatus, xhr) {
                 if (xhr.status==200 && xhr.statusText=="OK") {
+                    try {
+                        ga('send', 'event', 'button', 'click', 'Newsletter', 1)
+                    } finally  {
+                        // USER DOESN'T CONSENT
+                    }
                     newsletterResponse(true);
                 } else {
                     newsletterResponse(false);
@@ -302,25 +307,6 @@ $(window).on("load", function() {
         $target.fadeIn('fast');
     })
 
-
-    $('.cookiebar__close').on('click', function(e) {
-        var $cookiebar = $('.cookiebar');
-        var date = new Date();
-        date.setTime(date.getTime() + (7*24*60*60*1000));
-        //var expires = "expires=" + date.toUTCString();
-        var expires = "expires=0";
-
-        document.cookie = "cookies_notnow=true;" + expires + "; path=/";
-
-        $cookiebar.removeClass('show').attr('aria-hidden','true');
-
-    });
-
-    // test if user says no-cookies-now
-    if (!(document.cookie.indexOf('cookies_consent=true') === -1 && document.cookie.indexOf('cookies_notnow=true') === -1 )) {
-        var $cookiebar = $('.cookiebar');
-        $cookiebar.removeClass('show').attr('aria-hidden','true');
-    }
 });
 
 
